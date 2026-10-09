@@ -41,3 +41,5 @@ clean:
 	rm -rf $(OUT_DIR)
 
 ci: clean check test
+count: build
+	@wc -w $(OUTPUTS) | tail -1
